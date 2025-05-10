@@ -1,17 +1,5 @@
 vet-bot-landing/
 ├── index.html
-├── css/
-│   ├── style.css
-│   └── animate.css
-├── js/
-│   ├── main.js
-│   └── scrollreveal.min.js
-├── images/
-│   ├── hero-bg.jpg
-│   ├── cat1.jpg
-│   ├── dog1.jpg
-│   ├── icon-chat.png
-│   ├── icon-clock.png
-│   ├── icon-money.png
-│   └── ...
+├── style.css
+├── main.js
 └── README.md
