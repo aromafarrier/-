@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Онлайн-консультация ветеринара 24/7. Быстрая помощь вашему питомцу в любое время без очередей и стресса.">
+    <meta name="keywords" content="ветеринар онлайн, консультация ветеринара, помощь животным, телеграм бот ветеринар, здоровье питомца">
+    <title>SmartPetAI - Ветеринарная помощь онлайн | Консультация в Telegram</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="logo">Vet<span>Help</span></a>
+                <nav class="nav">
+                    <a href="#features" class="nav__link">Преимущества</a>
+                    <a href="#how-it-works" class="nav__link">Как это работает</a>
+                    <a href="#reviews" class="nav__link">Отзывы</a>
+                    <a href="#faq" class="nav__link">Вопросы</a>
+                </nav>
+                <a href="https://t.me/animal_vethelp_bot" class="btn btn--primary">Перейти в бота</a>
+                <button class="burger" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero__bg"></div>
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title wow fadeInUp">Профессиональная ветеринарная помощь вашему питомцу <span>24/7</span></h1>
+                <p class="hero__text wow fadeInUp" data-wow-delay="0.2s">Мгновенные консультации без стресса и очередей через Telegram-бота</p>
+                <div class="hero__buttons wow fadeInUp" data-wow-delay="0.4s">
+                    <a href="https://t.me/animal_vethelp_bot" class="btn btn--primary btn--large">Начать консультацию</a>
+                    <a href="#how-it-works" class="btn btn--outline btn--large">Как это работает</a>
+                </div>
+            </div>
+            <div class="hero__image wow fadeInRight">
+                <img src="images/hero-dog.png" alt="Счастливая собака" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats__grid">
+                <div class="stat wow fadeInUp">
+                    <div class="stat__number" data-count="5000">0</div>
+                    <div class="stat__label">довольных клиентов</div>
+                </div>
+                <div class="stat wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="stat__number" data-count="24">0</div>
+                    <div class="stat__label">часа в сутки</div>
+                </div>
+                <div class="stat wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="stat__number" data-count="5">0</div>
+                    <div class="stat__label">минут среднее время ответа</div>
+                </div>
+                <div class="stat wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="stat__number" data-count="98">0</div>
+                    <div class="stat__label">% точных диагнозов</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title wow fadeInUp">Почему выбирают нашего бота-ветеринара</h2>
+            <p class="section-subtitle wow fadeInUp" data-wow-delay="0.2s">Решаем проблемы владельцев животных быстро и профессионально</p>
+            
+            <div class="features__grid">
+                <div class="feature-card wow fadeInUp">
+                    <div class="feature-card__icon">
+                        <img src="images/icon-clock.png" alt="Круглосуточно" loading="lazy">
+                    </div>
+                    <h3 class="feature-card__title">Круглосуточная помощь</h3>
+                    <p class="feature-card__text">Не нужно ждать утра или записи к врачу - помощь доступна в любое время, даже ночью.</p>
+                </div>
+                
+                <div class="feature-card wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="feature-card__icon">
+                        <img src="images/icon-money.png" alt="Экономия" loading="lazy">
+                    </div>
+                    <h3 class="feature-card__title">Экономия времени и денег</h3>
+                    <p class="feature-card__text">Избегайте ненужных походов в клинику. Получите консультацию не выходя из дома.</p>
+                </div>
+                
+                <div class="feature-card wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="feature-card__icon">
+                        <img src="images/icon-chat.png" alt="Быстро" loading="lazy">
+                    </div>
+                    <h3 class="feature-card__title">Мгновенный ответ</h3>
+                    <p class="feature-card__text">ИИ-ассистент отвечает моментально, без ожидания в очереди.</p>
+                </div>
+                
+                <div class="feature-card wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="feature-card__icon">
+                        <img src="images/icon-doc.png" alt="Профессионально" loading="lazy">
+                    </div>
+                    <h3 class="feature-card__title">Профессиональные советы</h3>
+                    <p class="feature-card__text">База знаний на основе опыта ведущих ветеринаров с многолетним стажем.</p>
+                </div>
+                
+                <div class="feature-card wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="feature-card__icon">
+                        <img src="images/icon-pet.png" alt="Без стресса" loading="lazy">
+                    </div>
+                    <h3 class="feature-card__title">Без стресса для питомца</h3>
+                    <p class="feature-card__text">Ваш любимец не испытывает стресс от поездки в клинику и чужих людей.</p>
+                </div>
+                
+                <div class="feature-card wow fadeInUp" data-wow-delay="1s">
+                    <div class="feature-card__icon">
+                        <img src="images/icon-history.png" alt="История" loading="lazy">
+                    </div>
+                    <h3 class="feature-card__title">История консультаций</h3>
+                    <p class="feature-card__text">Все ваши обращения сохраняются и доступны в любое время.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pain-solution">
+        <div class="container">
+            <h2 class="section-title wow fadeInUp">Мы понимаем ваши переживания</h2>
+            <p class="section-subtitle wow fadeInUp" data-wow-delay="0.2s">И предлагаем простое решение</p>
+            
+            <div class="pain-solution__grid">
+                <div class="pain wow fadeInLeft">
+                    <h3>Проблемы владельцев животных</h3>
+                    <ul>
+                        <li><i class="fas fa-times-circle"></i> Нет возможности срочно попасть к ветеринару</li>
+                        <li><i class="fas fa-times-circle"></i> Высокие цены на очные консультации</li>
+                        <li><i class="fas fa-times-circle"></i> Стресс для животного при посещении клиники</li>
+                        <li><i class="fas fa-times-circle"></i> Ожидание в очередях с больным питомцем</li>
+                        <li><i class="fas fa-times-circle"></i> Не знаете, насколько срочно нужна помощь</li>
+                        <li><i class="fas fa-times-circle"></i> Ночью сложно найти работающую клинику</li>
+                    </ul>
+                </div>
+                
+                <div class="solution wow fadeInRight">
+                    <h3>Наше решение</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Консультация в любое время дня и ночи</li>
+                        <li><i class="fas fa-check-circle"></i> Бесплатный профессиональный совет</li>
+                        <li><i class="fas fa-check-circle"></i> Питомец остается в комфортной обстановке</li>
+                        <li><i class="fas fa-check-circle"></i> Мгновенный ответ без ожидания</li>
+                        <li><i class="fas fa-check-circle"></i> Оценка срочности ситуации</li>
+                        <li><i class="fas fa-check-circle"></i> Круглосуточная помощь без выходных</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title wow fadeInUp">Как получить помощь</h2>
+            <p class="section-subtitle wow fadeInUp" data-wow-delay="0.2s">Всего 3 простых шага до решения проблемы</p>
+            
+            <div class="steps">
+                <div class="step wow fadeInUp">
+                    <div class="step__number">1</div>
+                    <div class="step__content">
+                        <h3>Откройте бота в Telegram</h3>
+                        <p>Перейдите по ссылке <a href="https://t.me/animal_vethelp_bot">@animal_vethelp_bot</a> и нажмите "Start"</p>
+                    </div>
+                </div>
+                
+                <div class="step wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="step__number">2</div>
+                    <div class="step__content">
+                        <h3>Опишите проблему</h3>
+                        <p>Ответьте на несколько вопросов бота о состоянии питомца. Можно прикрепить фото анализов для расшифровки.</p>
+                    </div>
+                </div>
+                
+                <div class="step wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="step__number">3</div>
+                    <div class="step__content">
+                        <h3>Получите рекомендации</h3>
+                        <p>ИИ-ветеринар проанализирует ситуацию и даст профессиональные рекомендации по лечению.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="how-it-works__cta wow fadeInUp" data-wow-delay="0.6s">
+                <a href="https://t.me/animal_vethelp_bot" class="btn btn--primary btn--large">Попробовать сейчас</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cases">
+        <div class="container">
+            <h2 class="section-title wow fadeInUp">С какими проблемами мы помогаем</h2>
+            <p class="section-subtitle wow fadeInUp" data-wow-delay="0.2s">Примеры ситуаций, когда наш бот может помочь</p>
+            
+            <div class="cases__grid">
+                <div class="case-card wow fadeInUp">
+                    <div class="case-card__image">
+                        <img src="images/case1.jpg" alt="Проблемы с пищеварением" loading="lazy">
+                    </div>
+                    <div class="case-card__content">
+                        <h3>Проблемы с пищеварением</h3>
+                        <p>Рвота, диарея, отказ от еды - определим возможные причины и дадим рекомендации.</p>
+                    </div>
+                </div>
+                
+                <div class="case-card wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="case-card__image">
+                        <img src="images/case2.jpg" alt="Травмы" loading="lazy">
+                    </div>
+                    <div class="case-card__content">
+                        <h3>Травмы</h3>
+                        <p>Порезы, ушибы, хромота - оценим серьезность и подскажем что делать.</p>
+                    </div>
+                </div>
+                
+                <div class="case-card wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="case-card__image">
+                        <img src="images/case3.jpg" alt="Поведение" loading="lazy">
+                    </div>
+                    <div class="case-card__content">
+                        <h3>Изменения в поведении</h3>
+                        <p>Апатия, агрессия, беспокойство - поможем понять причины.</p>
+                    </div>
+                </div>
+                
+                <div class="case-card wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="case-card__image">
+                        <img src="images/case4.jpg" alt="Кожные проблемы" loading="lazy">
+                    </div>
+                    <div class="case-card__content">
+                        <h3>Кожные проблемы</h3>
+                        <p>Сыпь, зуд, выпадение шерсти - определим возможные причины.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2 class="section-title wow fadeInUp">Отзывы владельцев</h2>
+            <p class="section-subtitle wow fadeInUp" data-wow-delay="0.2s">Что говорят о нашем сервисе</p>
+            
+            <div class="reviews__slider">
+                <div class="review wow fadeInUp">
+                    <div class="review__header">
+                        <div class="review__avatar">
+                            <img src="images/avatar1.jpg" alt="Марина" loading="lazy">
+                        </div>
+                        <div class="review__info">
+                            <div class="review__name">Марина</div>
+                            <div class="review__date">15.09.2024</div>
+                        </div>
+                    </div>
+                    <div class="review__content">
+                        <p>Ночью кот начал странно кашлять, я испугалась. Бот быстро задал нужные вопросы, по описанию определил, что это, скорее всего, комок шерсти, и объяснил что делать. К утру коту стало лучше. Спасибо!</p>
+                    </div>
+                    <div class="review__rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="review wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="review__header">
+                        <div class="review__avatar">
+                            <img src="images/avatar2.jpg" alt="Алексей" loading="lazy">
+                        </div>
+                        <div class="review__info">
+                            <div class="review__name">Алексей</div>
+                            <div class="review__date">22.11.2024</div>
+                        </div>
+                    </div>
+                    <div class="review__content">
+                        <p>Собака съела что-то на улице, началась рвота. Бот помог понять, что это не отравление, а реакция на жирную пищу, посоветовал диету на день. Избежали ненужного визита в клинику.</p>
+                    </div>
+                    <div class="review__rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                
+                <div class="review wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="review__header">
+                        <div class="review__avatar">
+                            <img src="images/avatar3.jpg" alt="Ольга" loading="lazy">
+                        </div>
+                        <div class="review__info">
+                            <div class="review__name">Ольга</div>
+                            <div class="review__date">10.02.2025</div>
+                        </div>
+                    </div>
+                    <div class="review__content">
+                        <p>Попугайчик стал вялым, отказался от еды. Ветеринар через бот правильно предположил возможную причину и посоветовал срочно ехать в клинику. Оказалось, вовремя - спасли птичку. Очень благодарна!</p>
+                    </div>
+                    <div class="review__rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title wow fadeInUp">Частые вопросы</h2>
+            <p class="section-subtitle wow fadeInUp" data-wow-delay="0.2s">Все, что вы хотели знать о нашем сервисе</p>
+            
+            <div class="accordion">
+                <div class="accordion-item wow fadeInUp">
+                    <div class="accordion-header">
+                        <h3>Насколько точны рекомендации бота?</h3>
+                        <div class="accordion-icon"></div>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Наш бот использует базу знаний, составленную профессиональными ветеринарами с многолетним опытом. Точность рекомендаций составляет около 98% для распространенных проблем. В сложных случаях бот порекомендует обратиться в клинику.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="accordion-header">
+                        <h3>Можно ли доверять боту в экстренных случаях?</h3>
+                        <div class="accordion-icon"></div>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Бот может оценить срочность ситуации и дать первые рекомендации, но в действительно экстренных случаях (сильное кровотечение, потеря сознания, судороги и т.д.) он сразу посоветует срочно обратиться в клинику и подскажет, что делать до приезда врача.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="accordion-header">
+                        <h3>Как часто можно обращаться к боту?</h3>
+                        <div class="accordion-icon"></div>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Вы можете обращаться к боту так часто, как это необходимо. Все ваши обращения сохраняются в истории, что позволяет отслеживать динамику состояния питомца.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="accordion-header">
+                        <h3>Работает ли бот с экзотическими животными?</h3>
+                        <div class="accordion-icon"></div>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Да, бот имеет экспертные знания по наиболее распространенным экзотическим питомцам (попугаи, хомяки, черепахи, грызуны). Однако для редких видов рекомендации могут быть менее точными.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="accordion-header">
+                        <h3>Нужно ли платить за консультации?</h3>
+                        <div class="accordion-icon"></div>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Консультации бесплатны. В перспективе может быть организована система подписок в зависимости от роста числа пользователей и количсетва обрабатываемых запросов. В любом случае, это в разы дешевле очного визита к ветеринару.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <div class="cta__content wow fadeInUp">
+                <h2 class="cta__title">Помогите своему питомцу прямо сейчас</h2>
+                <p class="cta__text">Не откладывайте здоровье любимца на потом. Получите профессиональную консультацию за пару минут.</p>
+                <a href="https://t.me/animal_vethelp_bot" class="btn btn--primary btn--large">Начать консультацию</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__col">
+                    <a href="#" class="logo">Smart<span>PetAI</span></a>
+                    <p class="footer__text">Профессиональная ветеринарная помощь вашему питомцу 24/7</p>
+                </div>
+                
+                <div class="footer__col">
+                    <h3 class="footer__title">Ссылки</h3>
+                    <ul class="footer__links">
+                        <li><a href="#features">Преимущества</a></li>
+                        <li><a href="#how-it-works">Как это работает</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#faq">Вопросы</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__col">
+                    <h3 class="footer__title">Контакты</h3>
+                    <ul class="footer__contacts">
+                        <li><i class="fas fa-paper-plane"></i> <a href="https://t.me/animal_vethelp_bot">@animal_vethelp_bot</a></li>
+                        <li><i class="fas fa-envelope"></i> support@vethelp.example</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <div class="footer__copyright">© 2025 SmartPetAI. Все права защищены.</div>
+                <div class="footer__social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Инициализация анимаций
+        new WOW().init();
+        
+        // Настройка ScrollReveal
+        ScrollReveal().reveal('.wow', {
+            delay: 200,
+            distance: '20px',
+            origin: 'bottom',
+            easing: 'cubic-bezier(0.5, 0, 0, 1)',
+            interval: 100
+        });
+    </script>
+</body>
+</html>
